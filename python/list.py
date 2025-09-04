@@ -2,16 +2,16 @@
 
 
 
-# movies=[]
-# mov1 = input(" enter your 1st movie")
-# movies.append(mov1)
-# mov2 = input("enter your 2nd movies")
-# movies.append(mov2)
-# mov3 = input("enter your 3rd movies")
-# movies.append(mov3)
+movies=[]
+mov1 = input(" enter your 1st movie")
+movies.append(mov1)
+mov2 = input("enter your 2nd movies")
+movies.append(mov2)
+mov3 = input("enter your 3rd movies")
+movies.append(mov3)
 
 
-# print(movies)
+print(movies)
 
 # list palridrome question :
 
