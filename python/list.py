@@ -13,7 +13,7 @@ movies.append(mov3)
 
 print(movies)
 
-# list palridrome question :
+# list palindrome question :
 
 list1 = [1,2,1]
 
@@ -22,6 +22,6 @@ copy_list1 = list1.copy()
 copy_list1.reverse()
 
 if(copy_list1 ==list1):
-    print("IT IS A PALIDROME")
+    print("IT IS A PALINROME")
 else:
-    print("IT IS NOT A PALIDROME")
+    print("IT IS NOT A PALINDROME")
