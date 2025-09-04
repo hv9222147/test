@@ -1,4 +1,4 @@
-#type of the data type  :
+# type of the data type  :
 
 
 
@@ -18,9 +18,16 @@
  
 
 
-x = 10
-y ="10"
-print(x+int(y))
+# x = 10
+# y ="10"
+# print(x+int(y))
 
 
 
+# num = 10 
+# num_str = str (num)
+# print ("nmber as a string  \n ", num_str)
+
+
+n = [1,2,3,4,5,6]
+print(type(n))
