@@ -1,12 +1,12 @@
 # string :
 
-# n = input("enter your first name\n")
-# print("length of yur name is ",len(n))
+n = input("enter your first name\n")
+print("length of yur name is ",len(n))
 
 
 # #occurnece of $ in string:
-# str = ("hi $ i am the $ symbol $98.99")
-# print(str.count("$"))
+str = ("hi $ i am the $ symbol $98.99")
+print(str.count("$"))
 
 
 
@@ -15,26 +15,26 @@
 
 
 
-# light = "green"
-# if(light == "red"):
-#     print("stop") 
-# elif(light == "yellow"):
-#     print("wait")
-# elif(light == "green"):
-#      print("go")
+light = "green"
+if(light == "red"):
+    print("stop") 
+elif(light == "yellow"):
+    print("wait")
+elif(light == "green"):
+     print("go")
 
 
 #  conditional statement :
 
 
-# age = int(input("enter your age\t\t"))
+age = int(input("enter your age\t\t"))
 
-# if(age >= 18):
-#     print("you can vote")
-# elif(age <= 18):
-#     print("you cannot vote")
-# else:
-#     print("you cannot vote")
+if(age >= 18):
+    print("you can vote")
+elif(age <= 18):
+    print("you cannot vote")
+else:
+    print("you cannot vote")
 
 
 
