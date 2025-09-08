@@ -57,15 +57,25 @@
 
 
 
-# nesting statement:
+# # nesting statement:
 
 
-age = int(input("enter your age "))
+# age = int(input("enter your age "))
 
-if(age >= 18):
-    if(age >= 80):
-        print("you cannot drive")
-    else:
-        print("you can drive")
+# if(age >= 18):
+#     if(age >= 80):
+#         print("you cannot drive")
+#     else:
+#         print("you can drive")
+# else:
+#     print("cannot dirve")
+
+
+#even or odd no :
+
+num = int(input("enter your number"))
+
+if(num%2 == 0):
+    print("EVEN")
 else:
-    print("cannot dirve")
+    print("ODD")
