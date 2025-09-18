@@ -29,5 +29,3 @@
 # print ("nmber as a string  \n ", num_str)
 
 
-n = [1,2,3,4,5,6]
-print(type(n))
