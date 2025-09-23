@@ -106,11 +106,60 @@
 
 #question 10 for python in function:
 
-def check_pass_fail(marks):
-    if marks >= 40:
-        return "Pass"
+# def check_pass_fail(marks):
+#     if marks >= 40:
+#         return "Pass"
+#     else:
+#         return "Fail"
+# marks = float(input("enter your marks(int or decimal): "))
+# result = check_pass_fail(marks)
+# print("you are :",result)
+
+
+#question 11 for python in function:
+
+# def check_char(char):
+#     if char in 'aeiouAEIOU':
+#         return f"{char} is vowel"
+#     else:
+#         return f"{char} is consonant"
+# char = input("enter a char: ")
+# result = check_char(char)
+# print("the char is :", result)
+
+#question 12 for python in function:
+
+# def check_temp(temp):
+#     if temp < 30:
+#         return "cold"
+#     elif 30 <= temp <=40:
+#         return "warm"
+#     else:
+#         return  "hot"
+# temp = float(input("enter the temperature: "))
+# result = check_temp(temp)
+# print("the weather is : ", result)
+
+# question 13 for python in function:
+
+def calculator(a,b,op):
+    if op == '+':
+        return a+b
+    elif op == '-':
+        return a-b
+    elif op == '*':
+        return a*b
+    elif op == '/':
+        if b!=0:
+            return a/b
+        else:
+            return "error : division by zero"
     else:
-        return "Fail"
-marks = float(input("enter your marks(int or decimal): "))
-result = check_pass_fail(marks)
-print("you are :",result)
+        return "invalid operator"
+    
+   
+a = float(input("enter first number: "))
+b = float(input("enter second number: "))
+op = input("enter operator{+,-,*,/}:")
+result = calculator(a,b,op)
+print("the result is :",result)
