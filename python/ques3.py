@@ -14,6 +14,6 @@
 # else:
 #     print(n, "is not a Prime number")
     
-import math 
-sigmoid = 1/(1+math.exp(0.6))
-print(sigmoid)
+# import math 
+# sigmoid = 1/(1+math.exp(0.6))
+# print(sigmoid)
