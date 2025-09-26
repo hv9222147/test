@@ -402,22 +402,30 @@
 
 
 
+
 import sys
-
-try:
-    import tkinter as tk
-    from tkinter import messagebox, simpledialog
-except ImportError:
-    print("ERROR: tkinter is not installed on this system.")
-    sys.exit(1)
-
+import os
+import tkinter as tk
+import PIL
+import PIL.Image
+from tkinter import messagebox, simpledialog
+from PIL import Image, ImageTk  # top me import karein
 
 class InteractiveLearningApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Interactive Learning Program for Kids")
-        self.root.geometry("600x450")
-        self.root.config(bg="#F9F5E7")
+        self.root.geometry("1500x1000")
+        # self.root.config(bg="#F9F5E7")  # background image laga rahe hain, ye comment ya hata dein
+
+        # ----------------- Background Image -----------------
+        self.bg_image = Image.open("cartoon_background.png")  # aapka image file
+        self.bg_image = self.bg_image.resize((1500, 1000))  # window size ke hisaab se
+        self.bg_photo = ImageTk.PhotoImage(self.bg_image)
+        self.bg_label = tk.Label(root, image=self.bg_photo)
+        self.bg_label.place(x=0, y=0, relwidth=1, relheight=1)
+
+
 
         self.score = 0
 
@@ -500,7 +508,7 @@ class InteractiveLearningApp:
             if answer == q["answer"]:
                 self.update_score(10)
                 messagebox.showinfo("Correct!", "Awesome! +10 points 🎉")
-            else:
+            else:            
                 messagebox.showwarning("Oops!", "That’s not correct!")
 
     def update_score(self, points):

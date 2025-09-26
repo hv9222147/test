@@ -43,39 +43,39 @@
 
 # task 3 : inheritance:
 
-# class Car:
-#     def __init__(self,brand,model):
-#         self.brand = brand
-#         self.model = model
+class Car:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
         
-#     def greet(self):
-#         print("the car brand is:  "+self.brand)
-#         print("the car model is: "+self.model)
+    def greet(self):
+        print("the car brand is:  "+self.brand)
+        print("the car model is: "+self.model)
 
-#     def fuel_type(self):
-#          return "the fuel type is petrol or diesel"
+    def fuel_type(self):
+         return "the fuel type is petrol or diesel"
 
 
-# class ElectricCar(Car):
-#         def __init__(self,brand,model,battery_size):
-#             super().__init__(brand,model)
-#             self.battery_size = battery_size
+class ElectricCar(Car):
+        def __init__(self,brand,model,battery_size):
+            super().__init__(brand,model)
+            self.battery_size = battery_size
         
-#         def fuel_type(self):
-#              return "electric charge"
+        def fuel_type(self):
+             return "electric charge"
 
          
 
-# my_tesla = ElectricCar("tesla","model S", "85KWH")
-# # print(my_tesla.brand)
-# # print(my_tesla.model)
-# print(my_tesla.battery_size)
-# print(my_tesla.fuel_type())
-# my_tesla.greet()
+my_tesla = ElectricCar("tesla","model S", "85KWH")
+# print(my_tesla.brand)
+# print(my_tesla.model)
+print(my_tesla.battery_size)
+print(my_tesla.fuel_type())
+my_tesla.greet()
 
-# safari = Car("tata","safari")
-# print(my_tesla.fuel_type())
-# print(safari.fuel_type())
+safari = Car("tata","safari")
+print(my_tesla.fuel_type())
+print(safari.fuel_type())
 
 
 

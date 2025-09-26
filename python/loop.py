@@ -80,16 +80,16 @@
 
 #check the item is duolicate or not :
 
-items = ["apple","banana","orange","mango","apple","mango","orange"]
+# items = ["apple","banana","orange","mango","apple","mango","orange"]
 
-unique_item = set()
+# unique_item = set()
 
-for item in items:
-    if item in unique_item:
-        print("duplicate",item)
+# for item in items:
+#     if item in unique_item:
+#         print("duplicate",item)
        
-    else:
-     unique_item.add(item)
+#     else:
+#      unique_item.add(item)
 
 
 # items = ["apple","banana","orange","mango","apple","mango","orange"]
@@ -101,3 +101,6 @@ for item in items:
 #         print("duplicate:", item)
 #     else:
 #         unique_item.add(item)
+
+
+#exponentional backup:
