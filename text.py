@@ -1,0 +1,1 @@
+HELLO , THIS IS MY FILE IN PYTHON!this file is created using 'with' statementthis file is created using 'with' statement

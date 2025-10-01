@@ -127,6 +127,8 @@
 # b.sound()
 # c.sound()
 
+# question  for polymorphism:
+
 
 
 # class car:
@@ -161,36 +163,43 @@
 
 
 
-import math
-class shape:
-    def area(self):
-        print("the area is:")
+# maths question for   calculate a rectangle and circle:
 
-class circle(shape):
-    def __init__(self,radius):
-        self.radius = radius        
+
+
+# import math
+# class shape:
+#     def area(self):
+#         print("the area is:")
+
+# class circle(shape):
+#     def __init__(self,radius):
+#         self.radius = radius        
         
-    def area(self):
-         return math.pi*self.radius**2
+#     def area(self):
+#          return math.pi*self.radius**2
         
 
 
-class rectangle(shape):
-    def __init__(self,length,width):
-        self.length = length
-        self.width = width
+# class rectangle(shape):
+#     def __init__(self,length,width):
+#         self.length = length
+#         self.width = width
     
     
     
     
-    def area(self):
-        return self.length * self.width
+#     def area(self):
+#         return self.length * self.width
     
-shape = [rectangle(5,10), circle(7)]
+# shape = [rectangle(5,10), circle(7)]
 
-for shape in shape:
-    print(f"{shape.__class__.__name__}area:",shape.area())
+# for shape in shape:
+#     print(f"{shape.__class__.__name__}area:",shape.area())
 
 
 
-    
+with open("demo.txt","r") as file:
+    data = file.read()
+    print(data)
+
